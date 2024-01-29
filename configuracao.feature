@@ -20,10 +20,11 @@ E o usuário clicou no botão "Limpar"
 Então os campos do formulário devem estar vazios
     
 Esquema do Cenário:  Selecionar de produto
-Quando selecionar cor, tamanho e quantidade dos <produtos>
+Quando preencher <cor>, <tamanho> e <quantidade> dos <produtos>
 E adicionar os produtos no <carrinho>
 Então o sistema deve finalizar a <compra> 
 
 Exemplos: 
-|Produtos|Carrinho|Compra 
-|Preto, M, 2|Blusa|Valor final R$**
+|Produtos|cor    |Tamanho |Quantidade| Carrinho       |Compra 
+|Camisa  | Preto | M      | 2        |Valor final R$**| "Compra efetuada com sucesso" 
+|Shorts  |Branco | P      | 1        |Valor final R$**| "Compra efetuada com sucesso"
